@@ -340,7 +340,7 @@ footer{border-top:1px solid var(--line);padding:56px 0 32px;background:var(--bg)
 .form-success p{color:var(--text-dim);font-size:0.88rem;}
 
 /* ── SCROLL-DRIVEN CAPABILITY JOURNEY ── */
-.journey-track{position:relative;height:400vh;}
+.journey-track{position:relative;height:500vh;}
 .journey-sticky{position:sticky;top:70px;height:calc(100vh - 70px);background:var(--dark-bg);overflow:hidden;display:flex;flex-direction:column;}
 .journey-stage{position:absolute;inset:0;opacity:0;pointer-events:none;transition:opacity 0.6s ease;display:grid;grid-template-columns:1fr 1fr;gap:54px;align-items:center;max-width:1240px;margin:0 auto;padding:0 32px;}
 .journey-stage.active{opacity:1;pointer-events:auto;}
@@ -428,6 +428,13 @@ footer{border-top:1px solid var(--line);padding:56px 0 32px;background:var(--bg)
   nav .nav-ctas{display:none;}
 }
 
+.prod-journey-track{position:relative;height:400vh;}
+.prod-journey-sticky{position:sticky;top:70px;height:calc(100vh - 70px);background:var(--bg);display:flex;flex-direction:column;justify-content:center;overflow:hidden;}
+@media(max-width:980px){
+  .prod-journey-track{height:auto;}
+  .prod-journey-sticky{position:relative;top:0;height:auto;padding:40px 0;}
+}
+
 </style>
 </head>
 <body>
@@ -447,18 +454,18 @@ footer{border-top:1px solid var(--line);padding:56px 0 32px;background:var(--bg)
         <a href="index.html#platform">Platform</a>
         <div class="mega-panel"><div class="mega-inner">
           <div class="mega-col"><h5>CONVERSATIONS</h5>
-            <a href="product.html" class="mega-link"><i class="fas fa-comments"></i><span><span class="ml-t">Conversation Memory</span><span class="ml-d">Persistent context across every chat</span></span></a>
-            <a href="product.html" class="mega-link"><i class="fas fa-diagram-project"></i><span><span class="ml-t">Conversation Orchestrator</span><span class="ml-d">Keep conversations connected</span></span></a>
-            <a href="product.html" class="mega-link"><i class="fas fa-chart-line"></i><span><span class="ml-t">Conversation Intelligence</span><span class="ml-d">Extract insight in real time</span></span></a>
+            <a href="product.html#memory" class="mega-link"><i class="fas fa-comments"></i><span><span class="ml-t">Conversation Memory</span><span class="ml-d">Persistent context across every chat</span></span></a>
+            <a href="product.html#orchestrator" class="mega-link"><i class="fas fa-diagram-project"></i><span><span class="ml-t">Conversation Orchestrator</span><span class="ml-d">Keep conversations connected</span></span></a>
+            <a href="product.html#intelligence" class="mega-link"><i class="fas fa-chart-line"></i><span><span class="ml-t">Conversation Intelligence</span><span class="ml-d">Extract insight in real time</span></span></a>
           </div>
           <div class="mega-col"><h5>CHANNELS</h5>
-            <a href="usecases.html" class="mega-link"><i class="fab fa-whatsapp"></i><span><span class="ml-t">Messaging</span><span class="ml-d">SMS, WhatsApp, RCS</span></span></a>
-            <a href="usecases.html" class="mega-link"><i class="fas fa-phone"></i><span><span class="ml-t">Voice</span><span class="ml-d">Calls with real context</span></span></a>
-            <a href="usecases.html" class="mega-link"><i class="fas fa-envelope"></i><span><span class="ml-t">Email</span><span class="ml-d">Reliable delivery at scale</span></span></a>
+            <a href="usecases.html#cart-recovery" class="mega-link"><i class="fab fa-whatsapp"></i><span><span class="ml-t">Messaging</span><span class="ml-d">SMS, WhatsApp, RCS</span></span></a>
+            <a href="usecases.html#order-tracking" class="mega-link"><i class="fas fa-phone"></i><span><span class="ml-t">Voice</span><span class="ml-d">Calls with real context</span></span></a>
+            <a href="pricing.html" class="mega-link"><i class="fas fa-envelope"></i><span><span class="ml-t">Email</span><span class="ml-d">Reliable delivery at scale</span></span></a>
           </div>
           <div class="mega-col"><h5>DATA</h5>
-            <a href="product.html" class="mega-link"><i class="fas fa-shield-halved"></i><span><span class="ml-t">User authentication</span><span class="ml-d">Verify and protect accounts</span></span></a>
-            <a href="product.html" class="mega-link"><i class="fas fa-database"></i><span><span class="ml-t">Customer data</span><span class="ml-d">One record, every source</span></span></a>
+            <a href="product.html#auth" class="mega-link"><i class="fas fa-shield-halved"></i><span><span class="ml-t">User authentication</span><span class="ml-d">Verify and protect accounts</span></span></a>
+            <a href="product.html#data" class="mega-link"><i class="fas fa-database"></i><span><span class="ml-t">Customer data</span><span class="ml-d">One record, every source</span></span></a>
           </div>
         </div></div>
       </div>
@@ -466,18 +473,18 @@ footer{border-top:1px solid var(--line);padding:56px 0 32px;background:var(--bg)
         <a href="usecases.html">Solutions</a>
         <div class="mega-panel"><div class="mega-inner">
           <div class="mega-col"><h5>BY TEAM</h5>
-            <a href="usecases.html" class="mega-link"><i class="fas fa-headset"></i><span><span class="ml-t">Support</span><span class="ml-d">Resolve without the queue</span></span></a>
-            <a href="usecases.html" class="mega-link"><i class="fas fa-chart-simple"></i><span><span class="ml-t">Sales</span><span class="ml-d">Qualify and convert faster</span></span></a>
-            <a href="usecases.html" class="mega-link"><i class="fas fa-gears"></i><span><span class="ml-t">Operations</span><span class="ml-d">Automate the repeat work</span></span></a>
+            <a href="usecases.html#order-tracking" class="mega-link"><i class="fas fa-headset"></i><span><span class="ml-t">Support</span><span class="ml-d">Resolve without the queue</span></span></a>
+            <a href="usecases.html#lead-qualification" class="mega-link"><i class="fas fa-chart-simple"></i><span><span class="ml-t">Sales</span><span class="ml-d">Qualify and convert faster</span></span></a>
+            <a href="usecases.html#renewal-reminders" class="mega-link"><i class="fas fa-gears"></i><span><span class="ml-t">Operations</span><span class="ml-d">Automate the repeat work</span></span></a>
           </div>
           <div class="mega-col"><h5>USE CASES</h5>
-            <a href="usecases.html" class="mega-link"><i class="fas fa-truck"></i><span><span class="ml-t">Order tracking</span></span></a>
-            <a href="usecases.html" class="mega-link"><i class="fas fa-rotate-left"></i><span><span class="ml-t">Refunds & returns</span></span></a>
-            <a href="usecases.html" class="mega-link"><i class="fas fa-calendar-check"></i><span><span class="ml-t">Appointment booking</span></span></a>
+            <a href="usecases.html#order-tracking" class="mega-link"><i class="fas fa-truck"></i><span><span class="ml-t">Order tracking</span></span></a>
+            <a href="usecases.html#refunds-returns" class="mega-link"><i class="fas fa-rotate-left"></i><span><span class="ml-t">Refunds & returns</span></span></a>
+            <a href="usecases.html#appointment-booking" class="mega-link"><i class="fas fa-calendar-check"></i><span><span class="ml-t">Appointment booking</span></span></a>
           </div>
           <div class="mega-col"><h5>&nbsp;</h5>
-            <a href="usecases.html" class="mega-link"><i class="fas fa-id-card"></i><span><span class="ml-t">KYC & verification</span></span></a>
-            <a href="usecases.html" class="mega-link"><i class="fas fa-bell"></i><span><span class="ml-t">Renewal reminders</span></span></a>
+            <a href="usecases.html#kyc-verification" class="mega-link"><i class="fas fa-id-card"></i><span><span class="ml-t">KYC & verification</span></span></a>
+            <a href="usecases.html#renewal-reminders" class="mega-link"><i class="fas fa-bell"></i><span><span class="ml-t">Renewal reminders</span></span></a>
           </div>
         </div></div>
       </div>
@@ -508,14 +515,14 @@ footer{border-top:1px solid var(--line);padding:56px 0 32px;background:var(--bg)
 </div>
 <section class="page-hero wrap">
   <div class="eyebrow"><span class="dot"></span>GET IN TOUCH</div>
-  <h1>Let\u2019s talk about <span class="accent">what Cognivex could take off your plate.</span></h1>
-  <p>Book a demo, ask a pricing question, or just say hello \u2014 a real person reads every message.</p>
+  <h1>Let’s talk about <span class="accent">what Cognivex could take off your plate.</span></h1>
+  <p>Book a demo, ask a pricing question, or just say hello - a real person reads every message.</p>
 </section>
 
 <div class="wrap contact-wrap">
   <div class="contact-info">
     <h2>Other ways to reach us</h2>
-    <p>Prefer email or a call? Pick whatever\u2019s easiest \u2014 we typically respond within one business day.</p>
+    <p>Prefer email or a call? Pick whatever’s easiest - we typically respond within one business day.</p>
     <div class="contact-row">
       <div class="ic"><i class="fas fa-envelope"></i></div>
       <div><h5>Email</h5><span>hello@cognivex.ai</span></div>
@@ -546,7 +553,7 @@ footer{border-top:1px solid var(--line);padding:56px 0 32px;background:var(--bg)
       <div class="form-row">
         <div class="form-group"><label>Company</label><input type="text" name="company" placeholder="Your company"></div>
         <div class="form-group">
-          <label>I\u2019m interested in</label>
+          <label>I’m interested in</label>
           <select name="interest">
             <option>Booking a demo</option>
             <option>Pricing question</option>
@@ -564,7 +571,7 @@ footer{border-top:1px solid var(--line);padding:56px 0 32px;background:var(--bg)
     <div class="form-success" id="formSuccess">
       <i class="fas fa-check-circle"></i>
       <h3>Message received</h3>
-      <p>Thanks for reaching out \u2014 we\u2019ll get back to you within one business day.</p>
+      <p>Thanks for reaching out - we’ll get back to you within one business day.</p>
     </div>
   </div>
 </div>
@@ -578,7 +585,7 @@ document.getElementById('contactForm').addEventListener('submit', async function
   const submitBtn = form.querySelector('.form-submit');
   errorEl.style.display = 'none';
   if(FORMSPREE_ID === 'YOUR_FORM_ID'){
-    errorEl.textContent = 'Form not connected yet \u2014 add your Formspree ID in the code.';
+    errorEl.textContent = 'Form not connected yet - add your Formspree ID in the code.';
     errorEl.style.display = 'block';
     return;
   }
@@ -595,7 +602,7 @@ document.getElementById('contactForm').addEventListener('submit', async function
       document.getElementById('formSuccess').style.display = 'block';
     } else { throw new Error('Submission failed'); }
   } catch(err){
-    errorEl.textContent = "Something went wrong sending that \u2014 try again, or email hello@cognivex.ai directly.";
+    errorEl.textContent = "Something went wrong sending that - try again, or email hello@cognivex.ai directly.";
     errorEl.style.display = 'block';
     submitBtn.disabled = false;
     submitBtn.textContent = 'Send message';
