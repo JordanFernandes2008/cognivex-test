@@ -340,7 +340,7 @@ footer{border-top:1px solid var(--line);padding:56px 0 32px;background:var(--bg)
 .form-success p{color:var(--text-dim);font-size:0.88rem;}
 
 /* ── SCROLL-DRIVEN CAPABILITY JOURNEY ── */
-.journey-track{position:relative;height:400vh;}
+.journey-track{position:relative;height:500vh;}
 .journey-sticky{position:sticky;top:70px;height:calc(100vh - 70px);background:var(--dark-bg);overflow:hidden;display:flex;flex-direction:column;}
 .journey-stage{position:absolute;inset:0;opacity:0;pointer-events:none;transition:opacity 0.6s ease;display:grid;grid-template-columns:1fr 1fr;gap:54px;align-items:center;max-width:1240px;margin:0 auto;padding:0 32px;}
 .journey-stage.active{opacity:1;pointer-events:auto;}
@@ -428,6 +428,13 @@ footer{border-top:1px solid var(--line);padding:56px 0 32px;background:var(--bg)
   nav .nav-ctas{display:none;}
 }
 
+.prod-journey-track{position:relative;height:400vh;}
+.prod-journey-sticky{position:sticky;top:70px;height:calc(100vh - 70px);background:var(--bg);display:flex;flex-direction:column;justify-content:center;overflow:hidden;}
+@media(max-width:980px){
+  .prod-journey-track{height:auto;}
+  .prod-journey-sticky{position:relative;top:0;height:auto;padding:40px 0;}
+}
+
 </style>
 </head>
 <body>
@@ -447,18 +454,18 @@ footer{border-top:1px solid var(--line);padding:56px 0 32px;background:var(--bg)
         <a href="index.html#platform">Platform</a>
         <div class="mega-panel"><div class="mega-inner">
           <div class="mega-col"><h5>CONVERSATIONS</h5>
-            <a href="product.html" class="mega-link"><i class="fas fa-comments"></i><span><span class="ml-t">Conversation Memory</span><span class="ml-d">Persistent context across every chat</span></span></a>
-            <a href="product.html" class="mega-link"><i class="fas fa-diagram-project"></i><span><span class="ml-t">Conversation Orchestrator</span><span class="ml-d">Keep conversations connected</span></span></a>
-            <a href="product.html" class="mega-link"><i class="fas fa-chart-line"></i><span><span class="ml-t">Conversation Intelligence</span><span class="ml-d">Extract insight in real time</span></span></a>
+            <a href="product.html#memory" class="mega-link"><i class="fas fa-comments"></i><span><span class="ml-t">Conversation Memory</span><span class="ml-d">Persistent context across every chat</span></span></a>
+            <a href="product.html#orchestrator" class="mega-link"><i class="fas fa-diagram-project"></i><span><span class="ml-t">Conversation Orchestrator</span><span class="ml-d">Keep conversations connected</span></span></a>
+            <a href="product.html#intelligence" class="mega-link"><i class="fas fa-chart-line"></i><span><span class="ml-t">Conversation Intelligence</span><span class="ml-d">Extract insight in real time</span></span></a>
           </div>
           <div class="mega-col"><h5>CHANNELS</h5>
-            <a href="usecases.html" class="mega-link"><i class="fab fa-whatsapp"></i><span><span class="ml-t">Messaging</span><span class="ml-d">SMS, WhatsApp, RCS</span></span></a>
-            <a href="usecases.html" class="mega-link"><i class="fas fa-phone"></i><span><span class="ml-t">Voice</span><span class="ml-d">Calls with real context</span></span></a>
-            <a href="usecases.html" class="mega-link"><i class="fas fa-envelope"></i><span><span class="ml-t">Email</span><span class="ml-d">Reliable delivery at scale</span></span></a>
+            <a href="usecases.html#cart-recovery" class="mega-link"><i class="fab fa-whatsapp"></i><span><span class="ml-t">Messaging</span><span class="ml-d">SMS, WhatsApp, RCS</span></span></a>
+            <a href="usecases.html#order-tracking" class="mega-link"><i class="fas fa-phone"></i><span><span class="ml-t">Voice</span><span class="ml-d">Calls with real context</span></span></a>
+            <a href="pricing.html" class="mega-link"><i class="fas fa-envelope"></i><span><span class="ml-t">Email</span><span class="ml-d">Reliable delivery at scale</span></span></a>
           </div>
           <div class="mega-col"><h5>DATA</h5>
-            <a href="product.html" class="mega-link"><i class="fas fa-shield-halved"></i><span><span class="ml-t">User authentication</span><span class="ml-d">Verify and protect accounts</span></span></a>
-            <a href="product.html" class="mega-link"><i class="fas fa-database"></i><span><span class="ml-t">Customer data</span><span class="ml-d">One record, every source</span></span></a>
+            <a href="product.html#auth" class="mega-link"><i class="fas fa-shield-halved"></i><span><span class="ml-t">User authentication</span><span class="ml-d">Verify and protect accounts</span></span></a>
+            <a href="product.html#data" class="mega-link"><i class="fas fa-database"></i><span><span class="ml-t">Customer data</span><span class="ml-d">One record, every source</span></span></a>
           </div>
         </div></div>
       </div>
@@ -466,18 +473,18 @@ footer{border-top:1px solid var(--line);padding:56px 0 32px;background:var(--bg)
         <a href="usecases.html">Solutions</a>
         <div class="mega-panel"><div class="mega-inner">
           <div class="mega-col"><h5>BY TEAM</h5>
-            <a href="usecases.html" class="mega-link"><i class="fas fa-headset"></i><span><span class="ml-t">Support</span><span class="ml-d">Resolve without the queue</span></span></a>
-            <a href="usecases.html" class="mega-link"><i class="fas fa-chart-simple"></i><span><span class="ml-t">Sales</span><span class="ml-d">Qualify and convert faster</span></span></a>
-            <a href="usecases.html" class="mega-link"><i class="fas fa-gears"></i><span><span class="ml-t">Operations</span><span class="ml-d">Automate the repeat work</span></span></a>
+            <a href="usecases.html#order-tracking" class="mega-link"><i class="fas fa-headset"></i><span><span class="ml-t">Support</span><span class="ml-d">Resolve without the queue</span></span></a>
+            <a href="usecases.html#lead-qualification" class="mega-link"><i class="fas fa-chart-simple"></i><span><span class="ml-t">Sales</span><span class="ml-d">Qualify and convert faster</span></span></a>
+            <a href="usecases.html#renewal-reminders" class="mega-link"><i class="fas fa-gears"></i><span><span class="ml-t">Operations</span><span class="ml-d">Automate the repeat work</span></span></a>
           </div>
           <div class="mega-col"><h5>USE CASES</h5>
-            <a href="usecases.html" class="mega-link"><i class="fas fa-truck"></i><span><span class="ml-t">Order tracking</span></span></a>
-            <a href="usecases.html" class="mega-link"><i class="fas fa-rotate-left"></i><span><span class="ml-t">Refunds & returns</span></span></a>
-            <a href="usecases.html" class="mega-link"><i class="fas fa-calendar-check"></i><span><span class="ml-t">Appointment booking</span></span></a>
+            <a href="usecases.html#order-tracking" class="mega-link"><i class="fas fa-truck"></i><span><span class="ml-t">Order tracking</span></span></a>
+            <a href="usecases.html#refunds-returns" class="mega-link"><i class="fas fa-rotate-left"></i><span><span class="ml-t">Refunds & returns</span></span></a>
+            <a href="usecases.html#appointment-booking" class="mega-link"><i class="fas fa-calendar-check"></i><span><span class="ml-t">Appointment booking</span></span></a>
           </div>
           <div class="mega-col"><h5>&nbsp;</h5>
-            <a href="usecases.html" class="mega-link"><i class="fas fa-id-card"></i><span><span class="ml-t">KYC & verification</span></span></a>
-            <a href="usecases.html" class="mega-link"><i class="fas fa-bell"></i><span><span class="ml-t">Renewal reminders</span></span></a>
+            <a href="usecases.html#kyc-verification" class="mega-link"><i class="fas fa-id-card"></i><span><span class="ml-t">KYC & verification</span></span></a>
+            <a href="usecases.html#renewal-reminders" class="mega-link"><i class="fas fa-bell"></i><span><span class="ml-t">Renewal reminders</span></span></a>
           </div>
         </div></div>
       </div>
@@ -509,10 +516,11 @@ footer{border-top:1px solid var(--line);padding:56px 0 32px;background:var(--bg)
 <section class="page-hero wrap">
   <div class="eyebrow"><span class="dot"></span>THE PRODUCT</div>
   <h1>One agent. <span class="accent">Every part of the conversation.</span></h1>
-  <p>From the first message to the resolved ticket \u2014 see how Cognivex actually works under the hood.</p>
+  <p>From the first message to the resolved ticket - see how Cognivex actually works under the hood.</p>
 </section>
 
-<div class="wrap">
+<div class="wrap prod-journey-track" id="prodTrack">
+<div class="prod-journey-sticky">
   <div class="prod-tabs">
     <div class="prod-tab active" data-tab="builder">Agent Builder</div>
     <div class="prod-tab" data-tab="dashboard">Live Dashboard</div>
@@ -536,11 +544,11 @@ footer{border-top:1px solid var(--line);padding:56px 0 32px;background:var(--bg)
   <div class="prod-block" data-panel="integrations">
     <div>
       <h3>Connect your real data, not a demo dataset</h3>
-      <p>Cognivex plugs into your order system, CRM, and customer history so every answer reflects what\u2019s actually true \u2014 not a generic script.</p>
+      <p>Cognivex plugs into your order system, CRM, and customer history so every answer reflects what’s actually true - not a generic script.</p>
       <ul>
         <li><i class="fas fa-check"></i>Native connectors for common CRMs and order platforms</li>
         <li><i class="fas fa-check"></i>REST API for anything custom</li>
-        <li><i class="fas fa-check"></i>Data stays yours \u2014 nothing used to train shared models</li>
+        <li><i class="fas fa-check"></i>Data stays yours - nothing used to train shared models</li>
       </ul>
     </div>
     <div class="prod-visual"><i class="fas fa-database"></i></div>
@@ -549,7 +557,7 @@ footer{border-top:1px solid var(--line);padding:56px 0 32px;background:var(--bg)
   <div class="prod-block" data-panel="dashboard">
     <div>
       <h3>Watch every conversation live</h3>
-      <p>One dashboard shows exactly what the agent is saying, why it said it, and where it\u2019s about to hand off to a human.</p>
+      <p>One dashboard shows exactly what the agent is saying, why it said it, and where it’s about to hand off to a human.</p>
       <ul>
         <li><i class="fas fa-check"></i>Full transcript and reasoning trail per conversation</li>
         <li><i class="fas fa-check"></i>Real-time alerts on escalations</li>
@@ -561,8 +569,8 @@ footer{border-top:1px solid var(--line);padding:56px 0 32px;background:var(--bg)
 
   <div class="prod-block" data-panel="analytics">
     <div>
-      <h3>See what\u2019s actually working, not just what\u2019s busy</h3>
-      <p>Every conversation rolls up into numbers that matter \u2014 not vanity metrics, the ones that tell you where the agent is earning trust and where it isn\u2019t.</p>
+      <h3>See what’s actually working, not just what’s busy</h3>
+      <p>Every conversation rolls up into numbers that matter - not vanity metrics, the ones that tell you where the agent is earning trust and where it isn’t.</p>
       <ul>
         <li><i class="fas fa-check"></i>CSAT and resolution-rate trends over time</li>
         <li><i class="fas fa-check"></i>Export as CSV or pipe into your own BI tool</li>
@@ -572,6 +580,7 @@ footer{border-top:1px solid var(--line);padding:56px 0 32px;background:var(--bg)
     <div class="prod-visual"><i class="fas fa-chart-pie"></i></div>
   </div>
 </div>
+</div>
 
 <section class="features wrap">
   <div class="sec-head">
@@ -579,9 +588,9 @@ footer{border-top:1px solid var(--line);padding:56px 0 32px;background:var(--bg)
     <h2>Built with the same guardrails a careful support lead would insist on.</h2>
   </div>
   <div class="feat-grid">
-    <div class="feat"><span class="fnum">01</span><h3>Scoped by design</h3><p>Define exactly what the agent can promise, discount, or commit to \u2014 nothing more.</p></div>
+    <div class="feat"><span class="fnum">01</span><h3>Scoped by design</h3><p>Define exactly what the agent can promise, discount, or commit to - nothing more.</p></div>
     <div class="feat"><span class="fnum">02</span><h3>Escalation-first</h3><p>The agent is tuned to hand off the moment a conversation gets ambiguous or emotional.</p></div>
-    <div class="feat"><span class="fnum">03</span><h3>Auditable by default</h3><p>Every reply has a reasoning trail \u2014 nothing the agent says is a black box.</p></div>
+    <div class="feat"><span class="fnum">03</span><h3>Auditable by default</h3><p>Every reply has a reasoning trail - nothing the agent says is a black box.</p></div>
   </div>
 </section>
 
@@ -599,9 +608,45 @@ prodTabs.forEach(tab=>{
     prodTabs.forEach(t=>t.classList.remove('active'));
     tab.classList.add('active');
     showProdPanel(tab.dataset.tab);
+    const order=['builder','integrations','dashboard','analytics'];
+    const i=order.indexOf(tab.dataset.tab);
+    const trackEl=document.getElementById('prodTrack');
+    if(i>=0 && trackEl){
+      const total=trackEl.offsetHeight-window.innerHeight;
+      window.scrollTo({top:trackEl.offsetTop+(i/4)*total+10,behavior:'smooth'});
+    }
   });
 });
 showProdPanel('builder');
+
+(function(){
+  const track=document.getElementById('prodTrack');
+  if(!track)return;
+  const order=['builder','integrations','dashboard','analytics'];
+  function update(){
+    const rect=track.getBoundingClientRect();
+    const total=track.offsetHeight-window.innerHeight;
+    if(total<=0)return;
+    let progress=-rect.top/total;
+    progress=Math.max(0,Math.min(0.999,progress));
+    const idx=Math.floor(progress*4);
+    const key=order[idx];
+    prodTabs.forEach(t=>t.classList.toggle('active', t.dataset.tab===key));
+    showProdPanel(key);
+  }
+  window.addEventListener('scroll', update, {passive:true});
+  window.addEventListener('resize', update);
+})();
+
+const hashMap = {'memory':'analytics','orchestrator':'integrations','intelligence':'dashboard','auth':'builder','data':'integrations'};
+const h = window.location.hash.replace('#','');
+if(h){
+  const target = hashMap[h] || (document.querySelector(`[data-panel="${h}"]`) ? h : null);
+  if(target){
+    const tab = document.querySelector(`[data-tab="${target}"]`);
+    if(tab) tab.click();
+  }
+}
 </script>
 
 <footer>
