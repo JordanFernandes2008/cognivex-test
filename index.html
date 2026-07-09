@@ -340,7 +340,7 @@ footer{border-top:1px solid var(--line);padding:56px 0 32px;background:var(--bg)
 .form-success p{color:var(--text-dim);font-size:0.88rem;}
 
 /* ── SCROLL-DRIVEN CAPABILITY JOURNEY ── */
-.journey-track{position:relative;height:400vh;}
+.journey-track{position:relative;height:500vh;}
 .journey-sticky{position:sticky;top:70px;height:calc(100vh - 70px);background:var(--dark-bg);overflow:hidden;display:flex;flex-direction:column;}
 .journey-stage{position:absolute;inset:0;opacity:0;pointer-events:none;transition:opacity 0.6s ease;display:grid;grid-template-columns:1fr 1fr;gap:54px;align-items:center;max-width:1240px;margin:0 auto;padding:0 32px;}
 .journey-stage.active{opacity:1;pointer-events:auto;}
@@ -428,6 +428,13 @@ footer{border-top:1px solid var(--line);padding:56px 0 32px;background:var(--bg)
   nav .nav-ctas{display:none;}
 }
 
+.prod-journey-track{position:relative;height:400vh;}
+.prod-journey-sticky{position:sticky;top:70px;height:calc(100vh - 70px);background:var(--bg);display:flex;flex-direction:column;justify-content:center;overflow:hidden;}
+@media(max-width:980px){
+  .prod-journey-track{height:auto;}
+  .prod-journey-sticky{position:relative;top:0;height:auto;padding:40px 0;}
+}
+
 </style>
 </head>
 <body>
@@ -447,18 +454,18 @@ footer{border-top:1px solid var(--line);padding:56px 0 32px;background:var(--bg)
         <a href="#platform">Platform</a>
         <div class="mega-panel"><div class="mega-inner">
           <div class="mega-col"><h5>CONVERSATIONS</h5>
-            <a href="product.html" class="mega-link"><i class="fas fa-comments"></i><span><span class="ml-t">Conversation Memory</span><span class="ml-d">Persistent context across every chat</span></span></a>
-            <a href="product.html" class="mega-link"><i class="fas fa-diagram-project"></i><span><span class="ml-t">Conversation Orchestrator</span><span class="ml-d">Keep conversations connected</span></span></a>
-            <a href="product.html" class="mega-link"><i class="fas fa-chart-line"></i><span><span class="ml-t">Conversation Intelligence</span><span class="ml-d">Extract insight in real time</span></span></a>
+            <a href="product.html#memory" class="mega-link"><i class="fas fa-comments"></i><span><span class="ml-t">Conversation Memory</span><span class="ml-d">Persistent context across every chat</span></span></a>
+            <a href="product.html#orchestrator" class="mega-link"><i class="fas fa-diagram-project"></i><span><span class="ml-t">Conversation Orchestrator</span><span class="ml-d">Keep conversations connected</span></span></a>
+            <a href="product.html#intelligence" class="mega-link"><i class="fas fa-chart-line"></i><span><span class="ml-t">Conversation Intelligence</span><span class="ml-d">Extract insight in real time</span></span></a>
           </div>
           <div class="mega-col"><h5>CHANNELS</h5>
-            <a href="usecases.html" class="mega-link"><i class="fab fa-whatsapp"></i><span><span class="ml-t">Messaging</span><span class="ml-d">SMS, WhatsApp, RCS</span></span></a>
-            <a href="usecases.html" class="mega-link"><i class="fas fa-phone"></i><span><span class="ml-t">Voice</span><span class="ml-d">Calls with real context</span></span></a>
-            <a href="usecases.html" class="mega-link"><i class="fas fa-envelope"></i><span><span class="ml-t">Email</span><span class="ml-d">Reliable delivery at scale</span></span></a>
+            <a href="usecases.html#cart-recovery" class="mega-link"><i class="fab fa-whatsapp"></i><span><span class="ml-t">Messaging</span><span class="ml-d">SMS, WhatsApp, RCS</span></span></a>
+            <a href="usecases.html#order-tracking" class="mega-link"><i class="fas fa-phone"></i><span><span class="ml-t">Voice</span><span class="ml-d">Calls with real context</span></span></a>
+            <a href="pricing.html" class="mega-link"><i class="fas fa-envelope"></i><span><span class="ml-t">Email</span><span class="ml-d">Reliable delivery at scale</span></span></a>
           </div>
           <div class="mega-col"><h5>DATA</h5>
-            <a href="product.html" class="mega-link"><i class="fas fa-shield-halved"></i><span><span class="ml-t">User authentication</span><span class="ml-d">Verify and protect accounts</span></span></a>
-            <a href="product.html" class="mega-link"><i class="fas fa-database"></i><span><span class="ml-t">Customer data</span><span class="ml-d">One record, every source</span></span></a>
+            <a href="product.html#auth" class="mega-link"><i class="fas fa-shield-halved"></i><span><span class="ml-t">User authentication</span><span class="ml-d">Verify and protect accounts</span></span></a>
+            <a href="product.html#data" class="mega-link"><i class="fas fa-database"></i><span><span class="ml-t">Customer data</span><span class="ml-d">One record, every source</span></span></a>
           </div>
         </div></div>
       </div>
@@ -466,18 +473,18 @@ footer{border-top:1px solid var(--line);padding:56px 0 32px;background:var(--bg)
         <a href="usecases.html">Solutions</a>
         <div class="mega-panel"><div class="mega-inner">
           <div class="mega-col"><h5>BY TEAM</h5>
-            <a href="usecases.html" class="mega-link"><i class="fas fa-headset"></i><span><span class="ml-t">Support</span><span class="ml-d">Resolve without the queue</span></span></a>
-            <a href="usecases.html" class="mega-link"><i class="fas fa-chart-simple"></i><span><span class="ml-t">Sales</span><span class="ml-d">Qualify and convert faster</span></span></a>
-            <a href="usecases.html" class="mega-link"><i class="fas fa-gears"></i><span><span class="ml-t">Operations</span><span class="ml-d">Automate the repeat work</span></span></a>
+            <a href="usecases.html#order-tracking" class="mega-link"><i class="fas fa-headset"></i><span><span class="ml-t">Support</span><span class="ml-d">Resolve without the queue</span></span></a>
+            <a href="usecases.html#lead-qualification" class="mega-link"><i class="fas fa-chart-simple"></i><span><span class="ml-t">Sales</span><span class="ml-d">Qualify and convert faster</span></span></a>
+            <a href="usecases.html#renewal-reminders" class="mega-link"><i class="fas fa-gears"></i><span><span class="ml-t">Operations</span><span class="ml-d">Automate the repeat work</span></span></a>
           </div>
           <div class="mega-col"><h5>USE CASES</h5>
-            <a href="usecases.html" class="mega-link"><i class="fas fa-truck"></i><span><span class="ml-t">Order tracking</span></span></a>
-            <a href="usecases.html" class="mega-link"><i class="fas fa-rotate-left"></i><span><span class="ml-t">Refunds & returns</span></span></a>
-            <a href="usecases.html" class="mega-link"><i class="fas fa-calendar-check"></i><span><span class="ml-t">Appointment booking</span></span></a>
+            <a href="usecases.html#order-tracking" class="mega-link"><i class="fas fa-truck"></i><span><span class="ml-t">Order tracking</span></span></a>
+            <a href="usecases.html#refunds-returns" class="mega-link"><i class="fas fa-rotate-left"></i><span><span class="ml-t">Refunds & returns</span></span></a>
+            <a href="usecases.html#appointment-booking" class="mega-link"><i class="fas fa-calendar-check"></i><span><span class="ml-t">Appointment booking</span></span></a>
           </div>
           <div class="mega-col"><h5>&nbsp;</h5>
-            <a href="usecases.html" class="mega-link"><i class="fas fa-id-card"></i><span><span class="ml-t">KYC & verification</span></span></a>
-            <a href="usecases.html" class="mega-link"><i class="fas fa-bell"></i><span><span class="ml-t">Renewal reminders</span></span></a>
+            <a href="usecases.html#kyc-verification" class="mega-link"><i class="fas fa-id-card"></i><span><span class="ml-t">KYC & verification</span></span></a>
+            <a href="usecases.html#renewal-reminders" class="mega-link"><i class="fas fa-bell"></i><span><span class="ml-t">Renewal reminders</span></span></a>
           </div>
         </div></div>
       </div>
@@ -536,7 +543,7 @@ footer{border-top:1px solid var(--line);padding:56px 0 32px;background:var(--bg)
     <div class="hero-eco">
       <div class="eco-panel eco-main">
         <div class="eco-top"><span class="live"></span><span>cognivex-agent \u00b7 order-support \u00b7 live</span></div>
-        <div class="eco-bubble in">Hey, my order #4291 hasn\u2019t arrived \u2014 it\u2019s been 6 days</div>
+        <div class="eco-bubble in">Hey, my order #4291 hasn’t arrived - it’s been 6 days</div>
         <div class="eco-bubble out">I can see it left the warehouse on the 12th. Want me to raise it with logistics and send live updates?</div>
         <div class="eco-bubble in">Yes please</div>
         <div class="eco-badge"><i class="fas fa-check"></i>RESOLVED \u00b7 NO HUMAN NEEDED</div>
@@ -592,6 +599,15 @@ footer{border-top:1px solid var(--line);padding:56px 0 32px;background:var(--bg)
       </div>
       <div class="journey-visual"><i class="fas fa-brain"></i><div class="jv-bubble">Remembers last month's return - offers the right size before you ask.</div></div>
     </div>
+    <div class="journey-stage" data-stage="4">
+      <div>
+        <div class="sec-eye">// PLATFORM</div>
+        <h3>One <span class="accent">platform</span>. Every conversation.</h3>
+        <p>Self-service, hand-off, continuity, and memory - all running on one platform, not four disconnected tools stitched together.</p>
+        <div class="pill-row"><span class="pill-dark">Voice</span><span class="pill-dark">RCS</span><span class="pill-dark">Conversation Memory</span><span class="pill-dark">Conversation Intelligence</span><span class="pill-dark">Conversation Orchestrator</span></div>
+      </div>
+      <div class="journey-visual"><i class="fas fa-layer-group"></i><div class="jv-bubble">Every stage you just saw - running together, in real time.</div></div>
+    </div>
     <div class="journey-stepper">
       <div class="j-stepper" id="jStepper">
         <div class="j-step active" data-goto="0"><div class="j-step-node"></div><div class="j-step-label">Service</div></div>
@@ -614,7 +630,7 @@ footer{border-top:1px solid var(--line);padding:56px 0 32px;background:var(--bg)
     const total = track.offsetHeight - window.innerHeight;
     let progress = -rect.top / total;
     progress = Math.max(0, Math.min(1, progress));
-    let idx = Math.min(3, Math.floor(progress * 4));
+    let idx = Math.min(4, Math.floor(progress * 5));
     stages.forEach((s,i)=>s.classList.toggle('active', i===idx));
     steps.forEach((s,i)=>s.classList.toggle('active', i===idx));
   }
@@ -638,7 +654,7 @@ footer{border-top:1px solid var(--line);padding:56px 0 32px;background:var(--bg)
   <div class="sec-head center">
     <div class="sec-eye">// BUILDING BLOCKS</div>
     <h2>Building blocks for every conversation</h2>
-    <p>Every product is one piece of a larger platform \u2014 combine what you need, when you need it.</p>
+    <p>Every product is one piece of a larger platform - combine what you need, when you need it.</p>
   </div>
   <div class="feat-grid">
     <div class="feat">
@@ -802,10 +818,10 @@ devTabs.forEach(tab => {
 <!-- TESTIMONIAL -->
 <section class="testi wrap">
   <div class="t-card">
-    <div class="t-q">\u201c</div>
+    <div class="t-q">“</div>
     <div>
       <blockquote>We cut first-response time from four hours to under a minute. Our team finally stopped drowning in the same five questions on repeat.</blockquote>
-      <cite><b>Nadia Hassan</b> \u2014 Head of Support, Halcyon</cite>
+      <cite><b>Nadia Hassan</b> - Head of Support, Halcyon</cite>
     </div>
   </div>
 </section>
@@ -814,7 +830,7 @@ devTabs.forEach(tab => {
 <section class="cta-dark-section">
   <div class="cta-dark">
     <div class="wrap cta-dark-inner">
-      <h2>Don\u2019t wait for the future. Build it.</h2>
+      <h2>Don’t wait for the future. Build it.</h2>
       <p>One platform, flexible plans, pay-as-you-go pricing.</p>
       <div class="cta-dark-actions">
         <a href="contact.html" class="btn-primary">Start for free <i class="fas fa-arrow-right"></i></a>
