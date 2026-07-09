@@ -519,68 +519,87 @@ footer{border-top:1px solid var(--line);padding:56px 0 32px;background:var(--bg)
   <p>From the first message to the resolved ticket - see how Cognivex actually works under the hood.</p>
 </section>
 
-<div class="wrap prod-journey-track" id="prodTrack">
-<div class="prod-journey-sticky">
-  <div class="prod-tabs">
-    <div class="prod-tab active" data-tab="builder">Agent Builder</div>
-    <div class="prod-tab" data-tab="dashboard">Live Dashboard</div>
-    <div class="prod-tab" data-tab="integrations">Integrations</div>
-    <div class="prod-tab" data-tab="analytics">Analytics</div>
-  </div>
-
-  <div class="prod-block" data-panel="builder">
-    <div>
-      <h3>Brief it like a new hire, not a codebase</h3>
-      <p>No flowcharts, no decision trees, no intent-matching config. Describe what the agent should do in plain language and Cognivex handles the reasoning underneath.</p>
-      <ul>
-        <li><i class="fas fa-check"></i>Plain-language instructions, versioned like code</li>
-        <li><i class="fas fa-check"></i>Test conversations before going live</li>
-        <li><i class="fas fa-check"></i>Roll back any change in one click</li>
-      </ul>
+<!-- SCROLL-DRIVEN PRODUCT JOURNEY (same proven mechanic as homepage) -->
+<div class="journey-track" id="prodTrack" style="height:400vh;">
+  <div class="journey-sticky">
+    <div class="journey-stage active" data-pstage="0">
+      <div>
+        <div class="sec-eye">// AGENT BUILDER</div>
+        <h3>Brief it like a <span class="accent">new hire</span></h3>
+        <p>No flowcharts, no decision trees, no intent-matching config. Describe what the agent should do in plain language and Cognivex handles the reasoning underneath.</p>
+        <div class="pill-row"><span class="pill-dark">Plain-language instructions</span><span class="pill-dark">Test before going live</span><span class="pill-dark">One-click rollback</span></div>
+      </div>
+      <div class="journey-visual"><i class="fas fa-pen-fancy"></i><div class="jv-bubble">Instructions versioned like code - roll back any change instantly.</div></div>
     </div>
-    <div class="prod-visual"><i class="fas fa-pen-fancy"></i></div>
-  </div>
-
-  <div class="prod-block" data-panel="integrations">
-    <div>
-      <h3>Connect your real data, not a demo dataset</h3>
-      <p>Cognivex plugs into your order system, CRM, and customer history so every answer reflects what’s actually true - not a generic script.</p>
-      <ul>
-        <li><i class="fas fa-check"></i>Native connectors for common CRMs and order platforms</li>
-        <li><i class="fas fa-check"></i>REST API for anything custom</li>
-        <li><i class="fas fa-check"></i>Data stays yours - nothing used to train shared models</li>
-      </ul>
+    <div class="journey-stage" data-pstage="1">
+      <div>
+        <div class="sec-eye">// INTEGRATIONS</div>
+        <h3>Connect your <span class="accent">real data</span></h3>
+        <p>Cognivex plugs into your order system, CRM, and customer history so every answer reflects what's actually true - not a generic script.</p>
+        <div class="pill-row"><span class="pill-dark">Native CRM connectors</span><span class="pill-dark">REST API</span><span class="pill-dark">Your data stays yours</span></div>
+      </div>
+      <div class="journey-visual"><i class="fas fa-database"></i><div class="jv-bubble">Nothing used to train shared models - your data stays yours.</div></div>
     </div>
-    <div class="prod-visual"><i class="fas fa-database"></i></div>
-  </div>
-
-  <div class="prod-block" data-panel="dashboard">
-    <div>
-      <h3>Watch every conversation live</h3>
-      <p>One dashboard shows exactly what the agent is saying, why it said it, and where it’s about to hand off to a human.</p>
-      <ul>
-        <li><i class="fas fa-check"></i>Full transcript and reasoning trail per conversation</li>
-        <li><i class="fas fa-check"></i>Real-time alerts on escalations</li>
-        <li><i class="fas fa-check"></i>Search and filter across every past conversation</li>
-      </ul>
+    <div class="journey-stage" data-pstage="2">
+      <div>
+        <div class="sec-eye">// LIVE DASHBOARD</div>
+        <h3>Watch every <span class="accent">conversation live</span></h3>
+        <p>One dashboard shows exactly what the agent is saying, why it said it, and where it's about to hand off to a human.</p>
+        <div class="pill-row"><span class="pill-dark">Full reasoning trail</span><span class="pill-dark">Real-time alerts</span><span class="pill-dark">Search past conversations</span></div>
+      </div>
+      <div class="journey-visual"><i class="fas fa-chart-line"></i><div class="jv-bubble">Every escalation flagged in real time, before it becomes a complaint.</div></div>
     </div>
-    <div class="prod-visual"><i class="fas fa-chart-line"></i></div>
-  </div>
-
-  <div class="prod-block" data-panel="analytics">
-    <div>
-      <h3>See what’s actually working, not just what’s busy</h3>
-      <p>Every conversation rolls up into numbers that matter - not vanity metrics, the ones that tell you where the agent is earning trust and where it isn’t.</p>
-      <ul>
-        <li><i class="fas fa-check"></i>CSAT and resolution-rate trends over time</li>
-        <li><i class="fas fa-check"></i>Export as CSV or pipe into your own BI tool</li>
-        <li><i class="fas fa-check"></i>Spot a recurring gap before it becomes a pattern</li>
-      </ul>
+    <div class="journey-stage" data-pstage="3">
+      <div>
+        <div class="sec-eye">// ANALYTICS</div>
+        <h3>See what's <span class="accent">actually working</span></h3>
+        <p>Every conversation rolls up into numbers that matter - not vanity metrics, the ones that tell you where the agent is earning trust and where it isn't.</p>
+        <div class="pill-row"><span class="pill-dark">CSAT trends</span><span class="pill-dark">CSV export</span><span class="pill-dark">Spot gaps early</span></div>
+      </div>
+      <div class="journey-visual"><i class="fas fa-chart-pie"></i><div class="jv-bubble">Resolution rate up 18% this quarter - here's exactly why.</div></div>
     </div>
-    <div class="prod-visual"><i class="fas fa-chart-pie"></i></div>
+    <div class="journey-stepper">
+      <div class="j-stepper" id="pStepper" style="max-width:700px;">
+        <div class="j-step active" data-pgoto="0"><div class="j-step-node"></div><div class="j-step-label">Agent Builder</div></div>
+        <div class="j-step" data-pgoto="1"><div class="j-step-node"></div><div class="j-step-label">Integrations</div></div>
+        <div class="j-step" data-pgoto="2"><div class="j-step-node"></div><div class="j-step-label">Live Dashboard</div></div>
+        <div class="j-step" data-pgoto="3"><div class="j-step-node"></div><div class="j-step-label">Analytics</div></div>
+      </div>
+    </div>
   </div>
 </div>
-</div>
+<script>
+(function(){
+  const track = document.getElementById('prodTrack');
+  const stages = track.querySelectorAll('.journey-stage');
+  const steps = document.querySelectorAll('#pStepper .j-step');
+  function update(){
+    const rect = track.getBoundingClientRect();
+    const total = track.offsetHeight - window.innerHeight;
+    if(total<=0) return;
+    let progress = -rect.top / total;
+    progress = Math.max(0, Math.min(0.999, progress));
+    const idx = Math.floor(progress * 4);
+    stages.forEach((s,i)=>s.classList.toggle('active', i===idx));
+    steps.forEach((s,i)=>s.classList.toggle('active', i===idx));
+  }
+  window.addEventListener('scroll', update, {passive:true});
+  window.addEventListener('resize', update);
+  steps.forEach(step=>{
+    step.addEventListener('click', ()=>{
+      const goto = parseInt(step.dataset.pgoto);
+      const total = track.offsetHeight - window.innerHeight;
+      window.scrollTo({top: track.offsetTop + (goto/4)*total + 10, behavior:'smooth'});
+    });
+  });
+  update();
+  const hashMap = {'memory':0,'orchestrator':1,'intelligence':2,'auth':0,'data':1};
+  const h = window.location.hash.replace('#','');
+  if(h !== undefined && hashMap[h] !== undefined){
+    setTimeout(()=>{ steps[hashMap[h]].click(); }, 50);
+  }
+})();
+</script>
 
 <section class="features wrap">
   <div class="sec-head">
@@ -593,61 +612,6 @@ footer{border-top:1px solid var(--line);padding:56px 0 32px;background:var(--bg)
     <div class="feat"><span class="fnum">03</span><h3>Auditable by default</h3><p>Every reply has a reasoning trail - nothing the agent says is a black box.</p></div>
   </div>
 </section>
-
-<script>
-const prodTabs=document.querySelectorAll('.prod-tab');
-const prodPanels=document.querySelectorAll('.prod-block');
-function showProdPanel(key){
-  prodPanels.forEach(p=>{
-    if(p.dataset.panel===key){p.classList.add('active-panel','is-visible');}
-    else{p.classList.remove('active-panel');}
-  });
-}
-prodTabs.forEach(tab=>{
-  tab.addEventListener('click',()=>{
-    prodTabs.forEach(t=>t.classList.remove('active'));
-    tab.classList.add('active');
-    showProdPanel(tab.dataset.tab);
-    const order=['builder','integrations','dashboard','analytics'];
-    const i=order.indexOf(tab.dataset.tab);
-    const trackEl=document.getElementById('prodTrack');
-    if(i>=0 && trackEl){
-      const total=trackEl.offsetHeight-window.innerHeight;
-      window.scrollTo({top:trackEl.offsetTop+(i/4)*total+10,behavior:'smooth'});
-    }
-  });
-});
-showProdPanel('builder');
-
-(function(){
-  const track=document.getElementById('prodTrack');
-  if(!track)return;
-  const order=['builder','integrations','dashboard','analytics'];
-  function update(){
-    const rect=track.getBoundingClientRect();
-    const total=track.offsetHeight-window.innerHeight;
-    if(total<=0)return;
-    let progress=-rect.top/total;
-    progress=Math.max(0,Math.min(0.999,progress));
-    const idx=Math.floor(progress*4);
-    const key=order[idx];
-    prodTabs.forEach(t=>t.classList.toggle('active', t.dataset.tab===key));
-    showProdPanel(key);
-  }
-  window.addEventListener('scroll', update, {passive:true});
-  window.addEventListener('resize', update);
-})();
-
-const hashMap = {'memory':'analytics','orchestrator':'integrations','intelligence':'dashboard','auth':'builder','data':'integrations'};
-const h = window.location.hash.replace('#','');
-if(h){
-  const target = hashMap[h] || (document.querySelector(`[data-panel="${h}"]`) ? h : null);
-  if(target){
-    const tab = document.querySelector(`[data-tab="${target}"]`);
-    if(tab) tab.click();
-  }
-}
-</script>
 
 <footer>
   <div class="wrap">
