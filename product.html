@@ -3,10 +3,10 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Cognivex — Product</title>
-<meta name="description" content="See how Cognivex actually works.">
-<meta property="og:title" content="Cognivex — Product">
-<meta property="og:description" content="See how Cognivex actually works.">
+<title>Cognivex — The Platform for AI-Era Conversations</title>
+<meta name="description" content="Cognivex connects every channel, every piece of customer context, and AI agents on one platform.">
+<meta property="og:title" content="Cognivex — The Platform for AI-Era Conversations">
+<meta property="og:description" content="Cognivex connects every channel, every piece of customer context, and AI agents on one platform.">
 <meta property="og:type" content="website">
 <meta name="theme-color" content="#3355F0">
 <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%233355F0'/%3E%3Ctext x='32' y='44' font-size='32' font-weight='800' text-anchor='middle' fill='white' font-family='Arial,sans-serif'%3EC%3C/text%3E%3C/svg%3E">
@@ -303,11 +303,6 @@ footer{border-top:1px solid var(--line);padding:56px 0 32px;background:var(--bg)
 .customer-card .c-stat span{font-size:0.72rem;color:var(--text-faint);}
 
 /* ── PRODUCT TABS PAGE ── */
-.prod-tabs{display:flex;gap:10px;justify-content:center;margin-bottom:56px;flex-wrap:wrap;}
-.prod-tab{padding:10px 20px;border-radius:30px;border:1px solid var(--line2);font-size:0.85rem;font-weight:600;cursor:pointer;color:var(--text-dim);transition:all 0.2s;}
-.prod-tab.active{background:var(--accent);color:#fff;border-color:var(--accent);}
-.prod-block{display:none;grid-template-columns:1fr 1fr;gap:50px;align-items:center;padding-bottom:90px;}
-.prod-block.active-panel{display:grid;}
 .prod-visual{background:var(--bg-soft);border:1px solid var(--line2);border-radius:16px;padding:26px;min-height:280px;display:flex;align-items:center;justify-content:center;}
 .prod-visual i{font-size:3.5rem;color:var(--accent2);opacity:0.6;}
 .prod-block h3{font-family:'Inter',sans-serif;font-size:1.6rem;font-weight:800;margin-bottom:14px;color:var(--ink);}
@@ -428,12 +423,6 @@ footer{border-top:1px solid var(--line);padding:56px 0 32px;background:var(--bg)
   nav .nav-ctas{display:none;}
 }
 
-.prod-journey-track{position:relative;height:400vh;}
-.prod-journey-sticky{position:sticky;top:70px;height:calc(100vh - 70px);background:var(--bg);display:flex;flex-direction:column;justify-content:center;overflow:hidden;}
-@media(max-width:980px){
-  .prod-journey-track{height:auto;}
-  .prod-journey-sticky{position:relative;top:0;height:auto;padding:40px 0;}
-}
 
 </style>
 </head>
@@ -451,7 +440,7 @@ footer{border-top:1px solid var(--line);padding:56px 0 32px;background:var(--bg)
     <a href="index.html" class="logo"><span class="logo-mark">C</span>Cognivex</a>
     <div class="nav-links">
       <div class="nav-item-mega">
-        <a href="index.html#platform">Platform</a>
+        <a href="#platform">Platform</a>
         <div class="mega-panel"><div class="mega-inner">
           <div class="mega-col"><h5>CONVERSATIONS</h5>
             <a href="product.html#memory" class="mega-link"><i class="fas fa-comments"></i><span><span class="ml-t">Conversation Memory</span><span class="ml-d">Persistent context across every chat</span></span></a>
@@ -503,7 +492,7 @@ footer{border-top:1px solid var(--line);padding:56px 0 32px;background:var(--bg)
 </nav>
 <div class="mobile-menu" id="mobileMenu">
   <div class="mobile-menu-inner">
-    <a href="index.html#platform">Platform</a>
+    <a href="#platform">Platform</a>
     <a href="usecases.html">Use cases</a>
     <a href="product.html">Product</a>
     <a href="pricing.html">Pricing</a>
@@ -513,73 +502,124 @@ footer{border-top:1px solid var(--line);padding:56px 0 32px;background:var(--bg)
     <a href="contact.html" class="nav-cta">Start for free</a>
   </div>
 </div>
-<section class="page-hero wrap">
-  <div class="eyebrow"><span class="dot"></span>THE PRODUCT</div>
-  <h1>One agent. <span class="accent">Every part of the conversation.</span></h1>
-  <p>From the first message to the resolved ticket - see how Cognivex actually works under the hood.</p>
+<!-- HERO -->
+<section class="hero-dark" id="platform">
+  <div class="wrap hero-dark-inner">
+    <div>
+      <div class="eyebrow"><span class="dot"></span>AUTONOMOUS AI AGENT PLATFORM</div>
+      <h1>The platform for conversations <span class="accent">in the AI era.</span></h1>
+      <p>Cognivex connects every channel, every piece of customer context, and AI agents on one platform — so no conversation ever starts from zero.</p>
+      <div class="hero-ctas">
+        <a href="contact.html" class="btn-primary">Start for free <i class="fas fa-arrow-right"></i></a>
+        <a href="product.html" class="btn-ghost-dark">Explore the platform</a>
+      </div>
+      <div class="hero-trust-row">
+        <span><i class="fas fa-check"></i>Free trial</span>
+        <span><i class="fas fa-check"></i>No credit card required</span>
+        <span><i class="fas fa-check"></i>Flexible pricing</span>
+      </div>
+      <div class="hero-products">
+        <div class="lbl">PRODUCTS</div>
+        <div class="pill-row">
+          <span class="pill-dark">Voice</span>
+          <span class="pill-dark">RCS</span>
+          <span class="pill-dark">Conversation Intelligence</span>
+          <span class="pill-dark">Conversation Memory</span>
+          <span class="pill-dark">Conversation Orchestrator</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero-eco">
+      <div class="eco-panel eco-main">
+        <div class="eco-top"><span class="live"></span><span>cognivex-agent \u00b7 order-support \u00b7 live</span></div>
+        <div class="eco-bubble in">Hey, my order #4291 hasn’t arrived - it’s been 6 days</div>
+        <div class="eco-bubble out">I can see it left the warehouse on the 12th. Want me to raise it with logistics and send live updates?</div>
+        <div class="eco-bubble in">Yes please</div>
+        <div class="eco-badge"><i class="fas fa-check"></i>RESOLVED \u00b7 NO HUMAN NEEDED</div>
+      </div>
+      <div class="eco-panel eco-card c1">
+        <div class="k">RESOLUTION TIME</div>
+        <div class="v">8s</div>
+      </div>
+      <div class="eco-panel eco-card c2">
+        <div class="k">CSAT THIS WEEK</div>
+        <div class="v2">97.4%</div>
+      </div>
+    </div>
+  </div>
 </section>
 
-<!-- SCROLL-DRIVEN PRODUCT JOURNEY (same proven mechanic as homepage) -->
-<div class="journey-track" id="prodTrack" style="height:400vh;">
+<!-- SCROLL-DRIVEN JOURNEY -->
+<div class="journey-track" id="journeyTrack">
   <div class="journey-sticky">
-    <div class="journey-stage active" data-pstage="0">
+    <div class="journey-stage active" data-stage="0">
       <div>
-        <div class="sec-eye">// AGENT BUILDER</div>
-        <h3>Brief it like a <span class="accent">new hire</span></h3>
-        <p>No flowcharts, no decision trees, no intent-matching config. Describe what the agent should do in plain language and Cognivex handles the reasoning underneath.</p>
-        <div class="pill-row"><span class="pill-dark">Plain-language instructions</span><span class="pill-dark">Test before going live</span><span class="pill-dark">One-click rollback</span></div>
+        <div class="sec-eye">// SELF-SERVICE</div>
+        <h3>Intelligent <span class="accent">self-service</span></h3>
+        <p>Every interaction, including the first one, becomes a personalized experience. Agents draw on your internal knowledge and real-time data so replies feel like a natural conversation, not a script.</p>
+        <div class="pill-row"><span class="pill-dark">Voice</span><span class="pill-dark">Conversation Orchestrator</span><span class="pill-dark">Conversation Router</span></div>
       </div>
-      <div class="journey-visual"><i class="fas fa-pen-fancy"></i><div class="jv-bubble">Instructions versioned like code - roll back any change instantly.</div></div>
+      <div class="journey-visual"><i class="fas fa-comments"></i><div class="jv-bubble">"Does the Growth plan include WhatsApp?" - answered instantly, no queue.</div></div>
     </div>
-    <div class="journey-stage" data-pstage="1">
+    <div class="journey-stage" data-stage="1">
       <div>
-        <div class="sec-eye">// INTEGRATIONS</div>
-        <h3>Connect your <span class="accent">real data</span></h3>
-        <p>Cognivex plugs into your order system, CRM, and customer history so every answer reflects what's actually true - not a generic script.</p>
-        <div class="pill-row"><span class="pill-dark">Native CRM connectors</span><span class="pill-dark">REST API</span><span class="pill-dark">Your data stays yours</span></div>
+        <div class="sec-eye">// HAND-OFF</div>
+        <h3>Contextual <span class="accent">hand-off</span></h3>
+        <p>Agents know exactly when to bring in a human, based on complexity or intent. Conversations transfer with full context attached, so a customer never has to repeat themselves.</p>
+        <div class="pill-row"><span class="pill-dark">Voice</span><span class="pill-dark">Conversation Orchestrator</span><span class="pill-dark">Conversation Intelligence</span></div>
       </div>
-      <div class="journey-visual"><i class="fas fa-database"></i><div class="jv-bubble">Nothing used to train shared models - your data stays yours.</div></div>
+      <div class="journey-visual"><i class="fas fa-people-arrows"></i><div class="jv-bubble">Escalating to a specialist - full thread and intent passed along automatically.</div></div>
     </div>
-    <div class="journey-stage" data-pstage="2">
+    <div class="journey-stage" data-stage="2">
       <div>
-        <div class="sec-eye">// LIVE DASHBOARD</div>
-        <h3>Watch every <span class="accent">conversation live</span></h3>
-        <p>One dashboard shows exactly what the agent is saying, why it said it, and where it's about to hand off to a human.</p>
-        <div class="pill-row"><span class="pill-dark">Full reasoning trail</span><span class="pill-dark">Real-time alerts</span><span class="pill-dark">Search past conversations</span></div>
+        <div class="sec-eye">// CONTINUITY</div>
+        <h3>Cross-channel <span class="accent">continuity</span></h3>
+        <p>Customers switch between chat, text, voice, and email without interruption. The conversation carries across every channel, not just the one it started on.</p>
+        <div class="pill-row"><span class="pill-dark">RCS</span><span class="pill-dark">Voice</span><span class="pill-dark">Conversation Memory</span></div>
       </div>
-      <div class="journey-visual"><i class="fas fa-chart-line"></i><div class="jv-bubble">Every escalation flagged in real time, before it becomes a complaint.</div></div>
+      <div class="journey-visual"><i class="fas fa-arrows-turn-to-dots"></i><div class="jv-bubble">Started on WhatsApp, finished on a call - zero repeated context.</div></div>
     </div>
-    <div class="journey-stage" data-pstage="3">
+    <div class="journey-stage" data-stage="3">
       <div>
-        <div class="sec-eye">// ANALYTICS</div>
-        <h3>See what's <span class="accent">actually working</span></h3>
-        <p>Every conversation rolls up into numbers that matter - not vanity metrics, the ones that tell you where the agent is earning trust and where it isn't.</p>
-        <div class="pill-row"><span class="pill-dark">CSAT trends</span><span class="pill-dark">CSV export</span><span class="pill-dark">Spot gaps early</span></div>
+        <div class="sec-eye">// MEMORY</div>
+        <h3>Persistent <span class="accent">memory</span></h3>
+        <p>Cognivex unifies customer data into a living memory - preferences, history, sentiment - so it can anticipate what someone needs before they ask.</p>
+        <div class="pill-row"><span class="pill-dark">Conversation Memory</span><span class="pill-dark">Conversation Intelligence</span></div>
       </div>
-      <div class="journey-visual"><i class="fas fa-chart-pie"></i><div class="jv-bubble">Resolution rate up 18% this quarter - here's exactly why.</div></div>
+      <div class="journey-visual"><i class="fas fa-brain"></i><div class="jv-bubble">Remembers last month's return - offers the right size before you ask.</div></div>
+    </div>
+    <div class="journey-stage" data-stage="4">
+      <div>
+        <div class="sec-eye">// PLATFORM</div>
+        <h3>One <span class="accent">platform</span>. Every conversation.</h3>
+        <p>Self-service, hand-off, continuity, and memory - all running on one platform, not four disconnected tools stitched together.</p>
+        <div class="pill-row"><span class="pill-dark">Voice</span><span class="pill-dark">RCS</span><span class="pill-dark">Conversation Memory</span><span class="pill-dark">Conversation Intelligence</span><span class="pill-dark">Conversation Orchestrator</span></div>
+      </div>
+      <div class="journey-visual"><i class="fas fa-layer-group"></i><div class="jv-bubble">Every stage you just saw - running together, in real time.</div></div>
     </div>
     <div class="journey-stepper">
-      <div class="j-stepper" id="pStepper" style="max-width:700px;">
-        <div class="j-step active" data-pgoto="0"><div class="j-step-node"></div><div class="j-step-label">Agent Builder</div></div>
-        <div class="j-step" data-pgoto="1"><div class="j-step-node"></div><div class="j-step-label">Integrations</div></div>
-        <div class="j-step" data-pgoto="2"><div class="j-step-node"></div><div class="j-step-label">Live Dashboard</div></div>
-        <div class="j-step" data-pgoto="3"><div class="j-step-node"></div><div class="j-step-label">Analytics</div></div>
+      <div class="j-stepper" id="jStepper">
+        <div class="j-step active" data-goto="0"><div class="j-step-node"></div><div class="j-step-label">Service</div></div>
+        <div class="j-step" data-goto="1"><div class="j-step-node"></div><div class="j-step-label">Handoff</div></div>
+        <div class="j-step" data-goto="2"><div class="j-step-node"></div><div class="j-step-label">Continuity</div></div>
+        <div class="j-step" data-goto="3"><div class="j-step-node"></div><div class="j-step-label">Memory</div></div>
+        <div class="j-step" data-goto="4"><div class="j-step-node"></div><div class="j-step-label">Platform</div></div>
       </div>
     </div>
   </div>
 </div>
+
 <script>
 (function(){
-  const track = document.getElementById('prodTrack');
-  const stages = track.querySelectorAll('.journey-stage');
-  const steps = document.querySelectorAll('#pStepper .j-step');
+  const track = document.getElementById('journeyTrack');
+  const stages = document.querySelectorAll('.journey-stage');
+  const steps = document.querySelectorAll('.j-step');
   function update(){
     const rect = track.getBoundingClientRect();
     const total = track.offsetHeight - window.innerHeight;
-    if(total<=0) return;
     let progress = -rect.top / total;
-    progress = Math.max(0, Math.min(0.999, progress));
-    const idx = Math.floor(progress * 4);
+    progress = Math.max(0, Math.min(1, progress));
+    let idx = Math.min(4, Math.floor(progress * 5));
     stages.forEach((s,i)=>s.classList.toggle('active', i===idx));
     steps.forEach((s,i)=>s.classList.toggle('active', i===idx));
   }
@@ -587,29 +627,205 @@ footer{border-top:1px solid var(--line);padding:56px 0 32px;background:var(--bg)
   window.addEventListener('resize', update);
   steps.forEach(step=>{
     step.addEventListener('click', ()=>{
-      const goto = parseInt(step.dataset.pgoto);
+      const goto = parseInt(step.dataset.goto);
+      if(goto > 3) return;
       const total = track.offsetHeight - window.innerHeight;
       window.scrollTo({top: track.offsetTop + (goto/4)*total + 10, behavior:'smooth'});
     });
   });
   update();
-  const hashMap = {'memory':0,'orchestrator':1,'intelligence':2,'auth':0,'data':1};
-  const h = window.location.hash.replace('#','');
-  if(h !== undefined && hashMap[h] !== undefined){
-    setTimeout(()=>{ steps[hashMap[h]].click(); }, 50);
-  }
 })();
 </script>
 
+
+<!-- PRODUCT GRID -->
 <section class="features wrap">
-  <div class="sec-head">
-    <div class="sec-eye">// UNDER THE HOOD</div>
-    <h2>Built with the same guardrails a careful support lead would insist on.</h2>
+  <div class="sec-head center">
+    <div class="sec-eye">// BUILDING BLOCKS</div>
+    <h2>Building blocks for every conversation</h2>
+    <p>Every product is one piece of a larger platform - combine what you need, when you need it.</p>
   </div>
   <div class="feat-grid">
-    <div class="feat"><span class="fnum">01</span><h3>Scoped by design</h3><p>Define exactly what the agent can promise, discount, or commit to - nothing more.</p></div>
-    <div class="feat"><span class="fnum">02</span><h3>Escalation-first</h3><p>The agent is tuned to hand off the moment a conversation gets ambiguous or emotional.</p></div>
-    <div class="feat"><span class="fnum">03</span><h3>Auditable by default</h3><p>Every reply has a reasoning trail - nothing the agent says is a black box.</p></div>
+    <div class="feat">
+      <span class="fnum">01</span>
+      <h3>Conversations</h3>
+      <p>Build continuous conversations with persistent memory, intelligence, and orchestration for humans and AI.</p>
+      <a href="product.html" class="feat-link">Start conversations <i class="fas fa-arrow-right"></i></a>
+    </div>
+    <div class="feat">
+      <span class="fnum">02</span>
+      <h3>Messaging</h3>
+      <p>Send, receive, and manage SMS, RCS, WhatsApp, and more on one globally reliable platform.</p>
+      <a href="product.html" class="feat-link">Send messages <i class="fas fa-arrow-right"></i></a>
+    </div>
+    <div class="feat">
+      <span class="fnum">03</span>
+      <h3>Voice</h3>
+      <p>Build voice experiences that strengthen customer connections while unlocking ROI with data and AI.</p>
+      <a href="product.html" class="feat-link">Make calls <i class="fas fa-arrow-right"></i></a>
+    </div>
+    <div class="feat">
+      <span class="fnum">04</span>
+      <h3>Email</h3>
+      <p>Deliver email at incredible scale with a trusted, developer-friendly email API.</p>
+      <a href="product.html" class="feat-link">Send emails <i class="fas fa-arrow-right"></i></a>
+    </div>
+    <div class="feat">
+      <span class="fnum">05</span>
+      <h3>User authentication</h3>
+      <p>Fight fraud and keep customer accounts secure with verification and identity lookup tools.</p>
+      <a href="product.html" class="feat-link">Verify users <i class="fas fa-arrow-right"></i></a>
+    </div>
+    <div class="feat">
+      <span class="fnum">06</span>
+      <h3>Customer data</h3>
+      <p>Unify clean, consented customer data from any source for real-time insight on every customer.</p>
+      <a href="product.html" class="feat-link">Connect data <i class="fas fa-arrow-right"></i></a>
+    </div>
+  </div>
+</section>
+
+<!-- DEV SECTION -->
+<section class="dev-section">
+  <div class="wrap">
+    <div class="sec-head center">
+      <div class="sec-eye">// FOR DEVELOPERS</div>
+      <h2>Build. Without limits.</h2>
+      <p>Grab an official SDK and send your first message in minutes.</p>
+    </div>
+    <div class="dev-card">
+      <div class="dev-tabs-row">
+        <div class="dev-tab active" data-devtab="js">JavaScript</div>
+        <div class="dev-tab" data-devtab="py">Python</div>
+        <div class="dev-tab" data-devtab="curl">cURL</div>
+      </div>
+      <div class="dev-code">
+        <pre id="devCodeBlock"><span class="cm-com">// Send your first message with the Cognivex SDK</span>
+<span class="cm-key">const</span> client = <span class="cm-key">require</span>(<span class="cm-str">'cognivex'</span>)(accountSid, authToken);
+
+client.messages
+  .create({
+    body: <span class="cm-str">'Hi there'</span>,
+    from: <span class="cm-str">'+15017122661'</span>,
+    to: <span class="cm-str">'+15558675310'</span>
+  })
+  .then(message => console.log(message.sid));</pre>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+const DEV_SNIPPETS = {
+  js: `<span class="cm-com">// Send your first message with the Cognivex SDK</span>
+<span class="cm-key">const</span> client = <span class="cm-key">require</span>(<span class="cm-str">'cognivex'</span>)(accountSid, authToken);
+
+client.messages
+  .create({
+    body: <span class="cm-str">'Hi there'</span>,
+    from: <span class="cm-str">'+15017122661'</span>,
+    to: <span class="cm-str">'+15558675310'</span>
+  })
+  .then(message => console.log(message.sid));`,
+  py: `<span class="cm-com"># Send your first message with the Cognivex SDK</span>
+<span class="cm-key">from</span> cognivex.rest <span class="cm-key">import</span> Client
+
+client = Client(account_sid, auth_token)
+
+message = client.messages.create(
+    body=<span class="cm-str">'Hi there'</span>,
+    from_=<span class="cm-str">'+15017122661'</span>,
+    to=<span class="cm-str">'+15558675310'</span>
+)
+print(message.sid)`,
+  curl: `<span class="cm-com"># Send your first message with the Cognivex SDK</span>
+curl -X POST https://api.cognivex.ai/v1/Messages.json \\
+  --data-urlencode <span class="cm-str">"Body=Hi there"</span> \\
+  --data-urlencode <span class="cm-str">"From=+15017122661"</span> \\
+  --data-urlencode <span class="cm-str">"To=+15558675310"</span> \\
+  -u <span class="cm-key">ACCOUNT_SID</span>:<span class="cm-key">AUTH_TOKEN</span>`
+};
+const devTabs = document.querySelectorAll('.dev-tab');
+const devCodeBlock = document.getElementById('devCodeBlock');
+devTabs.forEach(tab => {
+  tab.addEventListener('click', () => {
+    devTabs.forEach(t => t.classList.remove('active'));
+    tab.classList.add('active');
+    const key = tab.dataset.devtab;
+    if (DEV_SNIPPETS[key]) devCodeBlock.innerHTML = DEV_SNIPPETS[key];
+  });
+});
+</script>
+
+<!-- CUSTOMER CAROUSEL -->
+<section class="cust-strip wrap">
+  <div class="sec-head center">
+    <div class="sec-eye">// TRUSTED BY TEAMS</div>
+    <h2>Different teams, different stacks. Same platform.</h2>
+  </div>
+  <div class="carousel-wrap" id="custCarousel">
+    <div class="carousel-track" id="custTrack">
+      <div class="car-slide"><div class="cs-logo">Northwind</div><div class="cs-num">30%</div><div class="cs-label">increased adoption after switching to Cognivex</div></div>
+      <div class="car-slide"><div class="cs-logo">Halcyon</div><div class="cs-num">150%</div><div class="cs-label">higher click rates on automated follow-ups</div></div>
+      <div class="car-slide"><div class="cs-logo">Veridian</div><div class="cs-num">60%</div><div class="cs-label">fewer escalations to human agents</div></div>
+      <div class="car-slide"><div class="cs-logo">Ferra</div><div class="cs-num">21M+</div><div class="cs-label">messages sent monthly on the platform</div></div>
+    </div>
+  </div>
+  <div class="carousel-dots" id="custDots"></div>
+</section>
+<script>
+(function(){
+  const track = document.getElementById('custTrack');
+  const dotsWrap = document.getElementById('custDots');
+  const slides = document.querySelectorAll('.car-slide');
+  let idx = 0;
+  slides.forEach((_,i)=>{
+    const d = document.createElement('div');
+    d.className = 'car-dot' + (i===0?' active':'');
+    d.addEventListener('click',()=>go(i));
+    dotsWrap.appendChild(d);
+  });
+  const dots = document.querySelectorAll('.car-dot');
+  function go(i){
+    idx = i;
+    track.style.transform = `translateX(-${idx*100}%)`;
+    dots.forEach((d,j)=>d.classList.toggle('active', j===idx));
+  }
+  setInterval(()=>{ go((idx+1) % slides.length); }, 3500);
+})();
+</script>
+
+<!-- TRUST BAND -->
+<section class="trust-band">
+  <div class="wrap trust-grid">
+    <div class="trust-item"><div class="t-x">2.8M</div><p>conversations resolved every month</p></div>
+    <div class="trust-item"><div class="t-x">142ms</div><p>average first-response time</p></div>
+    <div class="trust-item"><div class="t-x">1,200+</div><p>teams running on Cognivex</p></div>
+  </div>
+</section>
+
+<!-- TESTIMONIAL -->
+<section class="testi wrap">
+  <div class="t-card">
+    <div class="t-q">“</div>
+    <div>
+      <blockquote>We cut first-response time from four hours to under a minute. Our team finally stopped drowning in the same five questions on repeat.</blockquote>
+      <cite><b>Nadia Hassan</b> - Head of Support, Halcyon</cite>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL DARK CTA -->
+<section class="cta-dark-section">
+  <div class="cta-dark">
+    <div class="wrap cta-dark-inner">
+      <h2>Don’t wait for the future. Build it.</h2>
+      <p>One platform, flexible plans, pay-as-you-go pricing.</p>
+      <div class="cta-dark-actions">
+        <a href="contact.html" class="btn-primary">Start for free <i class="fas fa-arrow-right"></i></a>
+        <a href="pricing.html" class="btn-ghost-dark">View pricing</a>
+      </div>
+    </div>
   </div>
 </section>
 
