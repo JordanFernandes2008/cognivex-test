@@ -17,16 +17,16 @@
 
 :root{
   --bg:#FFFFFF;
-  --bg-soft:#F7F9FC;
-  --bg-soft2:#EEF1F6;
+  --bg-soft:#EEF3FF;
+  --bg-soft2:#E3EBFF;
   --line:#E4E9F0;
   --line2:#D7DEE8;
   --ink:#0F1729;
   --text-dim:#5B6472;
   --text-faint:#8B95A5;
-  --accent:#3355F0;
-  --accent-dark:#2540C4;
-  --accent-dim:#EEF1FF;
+  --accent:#3356F0;
+  --accent-dark:#2140C0;
+  --accent-dim:#E3EBFF;
   --accent2:#0EA5A0;
   --accent2-dim:#E5FAF8;
   --mint:#16A34A;
@@ -429,6 +429,10 @@ footer{border-top:1px solid var(--line);padding:56px 0 32px;background:var(--bg)
 .chat-quick-btn{background:var(--bg-soft2);border:1px solid var(--line2);color:var(--ink);padding:7px 13px;border-radius:20px;font-size:0.76rem;font-weight:600;cursor:pointer;transition:all 0.15s;}
 .chat-quick-btn:hover{border-color:var(--accent);color:var(--accent);}
 
+.prod-tabs{display:flex;gap:10px;justify-content:center;margin-bottom:56px;flex-wrap:wrap;}
+.prod-tab{padding:10px 20px;border-radius:30px;border:1px solid var(--line2);font-size:0.85rem;font-weight:600;cursor:pointer;color:var(--text-dim);transition:all 0.2s;}
+.prod-tab.active{background:var(--accent);color:#fff;border-color:var(--accent);}
+
 </style>
 </head>
 <body>
@@ -486,6 +490,7 @@ footer{border-top:1px solid var(--line);padding:56px 0 32px;background:var(--bg)
       <a href="pricing.html">Pricing</a>
       <a href="customers.html">Customers</a>
       <a href="about.html">About</a>
+      <a href="blog.html">Blog</a>
       <a href="contact.html">Contact</a>
     </div>
     <div class="nav-ctas">
@@ -503,6 +508,7 @@ footer{border-top:1px solid var(--line);padding:56px 0 32px;background:var(--bg)
     <a href="pricing.html">Pricing</a>
     <a href="customers.html">Customers</a>
     <a href="about.html">About</a>
+    <a href="blog.html">Blog</a>
     <a href="contact.html">Contact</a>
     <a href="contact.html" class="nav-cta">Start for free</a>
   </div>
@@ -510,7 +516,7 @@ footer{border-top:1px solid var(--line);padding:56px 0 32px;background:var(--bg)
 <section class="page-hero wrap">
   <div class="eyebrow"><span class="dot"></span>CHANNELS</div>
   <h1>One agent. <span class="accent">Every channel your customers use.</span></h1>
-  <p>Messaging, voice, and email \u2014 the same agent, the same memory, wherever the conversation happens.</p>
+  <p>Messaging, voice, and email - the same agent, the same memory, wherever the conversation happens.</p>
 </section>
 
 <div class="wrap">
@@ -522,7 +528,7 @@ footer{border-top:1px solid var(--line);padding:56px 0 32px;background:var(--bg)
 
   <div class="prod-block active-panel" data-chpanel="messaging">
     <div>
-      <h3>SMS, WhatsApp, and RCS \u2014 one inbox</h3>
+      <h3>SMS, WhatsApp, and RCS - one inbox</h3>
       <p>Send and receive across every messaging channel customers actually use. Rich cards, quick replies, and delivery receipts on RCS; global reach on SMS and WhatsApp.</p>
       <ul>
         <li><i class="fas fa-check"></i>Two-way SMS and WhatsApp Business API</li>
@@ -536,7 +542,7 @@ footer{border-top:1px solid var(--line);padding:56px 0 32px;background:var(--bg)
   <div class="prod-block" data-chpanel="voice">
     <div>
       <h3>Calls with real context, not a phone tree</h3>
-      <p>Voice agents that know who's calling and why \u2014 pulling the same customer memory and order data the chat agent already has.</p>
+      <p>Voice agents that know who's calling and why - pulling the same customer memory and order data the chat agent already has.</p>
       <ul>
         <li><i class="fas fa-check"></i>Natural-sounding AI voice, no IVR menus</li>
         <li><i class="fas fa-check"></i>Full transcript synced back to the conversation thread</li>
